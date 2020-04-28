@@ -40,6 +40,15 @@ public class PaymentProcessService {
                     break;
             }
             }
+            else
+            {
+            	try {
+					Thread.sleep(60000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+            }
 
         } while (repeatLoop == true);
     }
